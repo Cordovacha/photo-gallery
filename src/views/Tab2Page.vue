@@ -60,7 +60,7 @@ const showActionSheet = async (photo: UserPhoto) => {
             <ion-col size="6" :key="photo.filepath" v-for="photo in photos">
               <ion-img
                 :src="photo.webviewPath"
-                \@click="showActionSheet(photo)"
+                @click="showActionSheet(photo)"
               ></ion-img>
             </ion-col>
           </ion-row>
